@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davantedent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="img/images 3.jpeg" alt="Clínica DavanteDent — Benalmádena">
+                    </div>
+                    <div class="hero-text">
+                        <h1>Davantedent</h1>
+                        <p class="hero-tagline">Clínica Dental Benalmádena</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="contact-form">
+            <h3>Datos para la cita</h3>
+            <form id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Nombre del paciente" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input id="apellidos" type="text" placeholder="Apellidos del paciente" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="DNI">DNI</label>
+                        <input id="DNI" type="text" placeholder="12345678A" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="FechaNacimiento">Fecha de Nacimiento</label>
+                        <input id="FechaNacimiento" type="text" placeholder="DD/MM/AAAA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" type="text" placeholder="612 345 678" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha de la Cita</label>
+                        <input id="fecha" type="text" placeholder="DD/MM/AAAA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Hora">Hora de la Cita</label>
+                        <input id="Hora" type="text" placeholder="HH:MM" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="mensaje">Observaciones</label>
+                        <textarea id="mensaje" placeholder="Información adicional (opcional)" rows="4"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Generar cita</button>
+            </form>
+        </div>
+    </header>
+    
+    <!-- TABLA DE CITAS -->
+    <main class="container">
+        <section class="citas-section">
+            <h2>Citas Generadas</h2>
+            <div class="table-container">
+                <table id="citasTable">
+                    <thead>
+                        <tr>
+                            <th>Orden de la Cita</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>DNI</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Teléfono</th>
+                            <th>Fecha de la Cita</th>
+                            <th>Hora de la Cita</th>
+                            <th>Observaciones</th>
+                            <th>Modificar/Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="citasTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-text">
+                            <p>Avenida de la Constitución, 8, 29630 Benalmádena, Málaga, España</p>
+                            <p>Teléfono: <a href="tel:952562211">952 56 22 11</a></p>
+                            <p>Email: <a href="mailto:davantedental@benalmadena.es">davantedent@benalmadena.es</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
